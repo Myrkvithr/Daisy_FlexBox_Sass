@@ -180,29 +180,29 @@ body header nav menu li a:hover {
   padding-bottom: 3px;
 }
 
-body .recive {
+body .receive {
   margin-top: 0;
   text-align: center;
   background: #ffffff;
   padding: 70px 50px 10px 50px;
 }
 
-body .recive .icons {
+body .receive .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .recive .icons h4 {
+body .receive .icons h4 {
   text-decoration: underline;
   text-transform: uppercase;
 }
 
-body .recive .icons p {
+body .receive .icons p {
   font-size: 18px;
 }
 
-body .recive .icons div {
+body .receive .icons div {
   padding: 15px;
 }
 
@@ -450,6 +450,7 @@ body .our_team .wrap .people {
 body .our_team .wrap a {
   color: #414141;
   font-size: 10px;
+  text-decoration: none;
 }
 
 body .our_team .wrap a:hover {

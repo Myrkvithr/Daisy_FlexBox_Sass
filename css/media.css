@@ -1,0 +1,172 @@
+@media screen and (max-width: 995px) and (min-width: 760px) {
+    body .expand {
+        padding: 10px;
+    }
+
+    body .expand .mainText {
+
+        padding: 30px 0px;
+        margin-bottom: 40px;
+    }
+
+    body .expand .mainText h4 {
+        font-size: 37px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 550px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    body .expand {
+        padding: 30px 30px 10px 30px;
+    }
+
+    body .expand .mainText {
+        padding: 50px 0px;
+        margin-bottom: 20px;
+    }
+
+    body .expand .mainText h4 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    menu li {
+        margin-bottom: 10px;
+    }
+
+    body header .mainText h4 {
+        font-size: 40px;
+        margin-top: -20px;
+    }
+
+    body header .mainText p {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    body .expand {
+        padding: 10px;
+    }
+
+    body .expand .mainText {
+        border: none;
+        padding: 30px 0px;
+        margin-bottom: 20px;
+    }
+
+    body .expand .mainText h4 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    body .our-process .steps {
+        display: block;
+    }
+
+    body .our-process .back_process {
+        display: none;
+    }
+    body .our_team .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .recive {
+        padding: 30px 20px;
+    }
+
+    .recive h4 {
+        font-size: 26px;
+    }
+
+    .recive p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icons div {
+        max-width: 350px;
+    }
+
+    .icons div p {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.wedo1,
+    section.wedo2 {
+        padding-top: 20px;
+        text-align: center;
+    }
+    section.wedo1 div.headerText {
+        margin: 0px;
+    }
+    .wedo1 a.arrowDown,
+    .wedo2 a.arrowDown {
+        margin: 0px auto 5px;
+    }
+    .wedo1 .container,
+    .wedo2 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wedo1 .container img,
+    .wedo2 .container img {
+        width: 100%;
+    }
+    .wedo1 .container .right,
+    .wedo2 .container .right {
+        order: 1;
+        max-width: 100%;
+    }
+    .wedo1 .container .left,
+    .wedo2 .container .left {
+        order: 2;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .headerText {
+        margin: 0;
+    }
+    .wedo1 .container .btn,
+    .wedo2 .container .btn {
+        margin-bottom: 20px;
+    }
+    .wedo2 .container .left {
+        text-align: center;
+    }
+    .wedo2 .container .left h4 {
+        border: none;
+        border-left: 10px solid #fc635e;
+        padding-right: 0px;
+    }
+    .wedo1 .container a.arrowDown,
+    .wedo2 .container a.arrowDown {
+        margin: 5px;
+    }
+}

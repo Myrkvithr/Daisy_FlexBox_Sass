@@ -1,0 +1,291 @@
+$priamry-color: #fc635e
+$priamry-color-dark: #e44640
+$priamry-color-rgba: rgba(255,72,72,0.75)
+$gray-light: #868686
+$gray-dark: #414141
+$gray-text: #f2f2f2
+$white-text: #ffffff
+%h2
+    font-size: 50px
+    color: $white-text
+    &:before
+        content: ""
+        background: transparent
+
+body
+    /* Кнопка наверх */
+
+    #toTop
+        display: none
+        z-index: 999
+        width: 20px
+        height: 15px
+        border: none
+        font-size: 10px
+        border-radius: 3px
+        background: #fc635e
+        text-align: center
+        padding: 5px
+        position: fixed
+        bottom: 10px
+        right: 10px
+        cursor: pointer
+        color: #000000
+
+    h2
+        font-size: 35px
+        margin: 20px 0
+        text-transform: uppercase
+        color: $gray-light
+        padding-bottom: 5px
+        display: inline-block
+        position: relative
+        &:before
+            display: block
+            content: ""
+            height: 4px
+            width: 100%
+            background: $gray-light
+            position: absolute
+            left: 0
+            bottom: 0
+        span
+            color: $priamry-color
+    a.arrowDown
+        font-size: 30px
+        text-decoration: none
+        color: $priamry-color
+        border: 1px solid $priamry-color
+        display: flex
+        justify-content: center
+        margin: 0 auto
+        border-radius: 50%
+        width: 45px
+        height: 45px
+        &:hover
+            background: $priamry-color
+            color: $white-text
+    a.btn
+        color: $priamry-color
+        text-decoration: none
+        font-size: 22px
+        border: 2px solid $priamry-color
+        padding: 12px 28px
+        border-radius: 8px
+        &:hover
+            background: $priamry-color
+            color: $white-text
+    .mainText
+        text-align: center
+        p
+            color: $white-text
+            font-size: 22px
+    .headerText
+        color: $gray-light
+        p
+            font-size: 22px
+            margin-bottom: 50px
+    /*Тело сайта*/
+    margin: 0 auto
+    max-width: 1260px
+    header
+        h2
+            @extend %h2
+        background: url('../img/background.png') no-repeat
+        display: flex
+        flex-direction: column
+        min-height: 600px
+        width: 100%
+        max-width: 1260px
+        justify-content: space-around
+        nav
+            display: flex
+            justify-content: space-around
+            align-items: center
+            >a
+                color: $white-text
+                font-size: 25px
+                font-weight: bold
+                text-decoration: none
+                img
+                    padding-right: 15px
+                    vertical-align: middle
+            .logo:hover img
+                opacity: .7
+            menu
+                list-style: none
+                text-transform: uppercase
+                display: flex
+                li
+                    padding-left: 15px
+                    a
+                        color: $white-text
+                        font-size: 20px
+                        text-decoration: none
+                        &:hover
+                            color: $priamry-color
+                            border-bottom: 5px solid $priamry-color
+                            padding-bottom: 3px
+    .recive
+        margin-top: 0
+        text-align: center
+        background: $white-text
+        padding: 70px 50px 10px 50px
+        .icons
+            display: flex
+            h4
+                text-decoration: underline
+                text-transform: uppercase
+            p
+                font-size: 18px
+            div
+                padding: 15px
+    .expand
+        padding: 100px 100px 15px 100px
+        background: url(../img/expand.png) no-repeat
+        .mainText
+            padding: 50px
+            margin-bottom: 80px
+            border: 8px solid rgba(255, 255, 255, 0.102)
+            h2
+                @extend %h2
+    .our-process
+        .steps
+            display: none
+        text-align: center
+        padding-top: 30px
+        padding-bottom: 15px
+        .back_process
+            min-height: 500px
+            min-width: auto
+            background-image: url(../img/Our_process.png)
+            background-position: center center
+            background-size: contain
+            background-repeat: no-repeat
+    .wedo1, .wedo2
+        background: $gray-text
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 140px
+        .headerText
+            margin: -60px auto 60px
+        .container
+            display: flex
+            justify-content: space-around
+        p
+            color: $gray-light
+            font-size: 18px
+            padding-bottom: 15px
+        .left
+            max-width: 50%
+            h3
+                text-transform: uppercase
+                border-left: 10px solid $priamry-color
+                padding-left: 5px
+                font-size: 28px
+                color: $gray-light
+        .right
+            max-width: 58%
+        .arrowDown
+            margin: 60px auto 15px
+    .wedo2
+        background: $white-text
+        .left
+            order: 2
+            text-align: right
+            h3
+                border: none
+                border-right: 10px solid $priamry-color
+                padding-right: 5px
+        .right
+            order: 1
+    .portfolio
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding-bottom: 30px
+        .btn
+            margin: 40px 0
+        .controls
+            text-align: center
+            letter-spacing: 2px
+            font-size: 25px
+            border-top: 3px $gray-light solid
+            border-bottom: 3px $gray-light solid
+            padding: 15px
+            margin-bottom: 30px
+            button
+                color: $priamry-color
+                background: transparent
+                border: none
+                text-transform: uppercase
+                font-size: 22px
+                &:hover
+                    color: $priamry-color-dark
+                    cursor: pointer
+        .container-filter
+            width: 100%
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            #ex1
+                background-image: url(../img/portfolio/1.png)
+            #ex2
+                background-image: url(../img/portfolio/2.png)
+            #ex3
+                background-image: url(../img/portfolio/3.png)
+            #ex4
+                background-image: url(../img/portfolio/4.png)
+            #ex5
+                background-image: url(../img/portfolio/5.png)
+            #ex6
+                background-image: url(../img/portfolio/6.png)
+            div
+                background-size: cover
+                background-position: centr center
+                margin: 10px
+                width: 250px
+                height: 180px
+                .fil
+                    p
+                        margin: 0
+                        padding: 10px
+                    font-size: 20px
+                    text-transform: uppercase
+                    color: $white-text
+                    font-weight: bold
+                    display: none
+                    position: relative
+                    margin: 0
+                    background: url(../img/portfolio/plus.png) $priamry-color-rgba
+                    background-position: center
+                    background-repeat: no-repeat
+                &:hover .fil
+                    cursor: pointer
+                    display: block
+    .our_team
+        display: flex
+        flex-direction: column
+        text-align: center
+        background: $gray-text
+        padding: 30px
+        margin-bottom: 10px
+        .wrap
+            display: flex
+            justify-content: space-around
+            .people
+                text-align: center
+                margin-bottom: 15px
+            a
+                color: $gray-dark
+                font-size: 10px
+                &:hover
+                    color: $gray-light
+            p
+                color: $gray-light
+            h4
+                color: $gray-dark
+                padding-bottom: 5px
+                span
+                    color: $priamry-color
